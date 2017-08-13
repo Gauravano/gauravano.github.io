@@ -55,8 +55,8 @@ html.swipebox-html.swipebox-touch {
 }
 #swipebox-slider .slide img, #swipebox-slider .slide .swipebox-video-container {
   display: inline-block;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 80%;
+  max-width: 80%;
   margin: 0;
   padding: 0;
   width: auto;
@@ -121,7 +121,7 @@ html.swipebox-html.swipebox-touch {
     display: block;
     width: 45%;
     text-align: center;
-    margin: 0 auto !important;
+    margin: 4em auto 0 !important;
 }
 
 #swipebox-prev,
@@ -304,7 +304,7 @@ html.swipebox-html.swipebox-touch {
 #swipebox-title {
     width: 61%;
     line-height: 1.8em;
-    margin: 1em auto 0 !important;
+    margin: 4em auto 0 !important;
 }
 #swipebox-top-bar {
    top: 74%;

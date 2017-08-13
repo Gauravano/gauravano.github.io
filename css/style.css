@@ -4,6 +4,93 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+.resume{
+  margin-top: 70px;
+  background: url('https://source.unsplash.com/L8126OwlroY/');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .resume .content{
+    background: rgba(0,0,0,0.3);
+    padding: 50px 0;
+    text-align: center;
+    }
+   .resume .content a{
+      color: #fff;
+      text-transform: uppercase;
+     } 
+      .resume .content a .btn-resume{
+        display: inline-block;
+        font-size: 1.1em;
+        padding: 20px;
+        margin: 0 15px;
+        background: rgba(255,255,255,0.2);
+        position:relative;
+        border:2px solid #fff;
+        border-radius: 5px;
+        overflow: hidden;
+       } 
+        .resume .content a .btn-resume span{
+          -webkit-transition: opacity 1.2s;
+          -moz-transition: opacity 1.2s;
+          transition: opacity 1.2s;
+        }
+        
+       .resume .content a .btn-resume i{
+          color:#fff;
+          position:absolute;
+          padding: 20px 0;
+          top:-80px;
+          width:100%;
+          left:0;
+          -webkit-transition: top .5s;
+          -moz-transition: top .5s;
+          transition: top .5s;
+        }
+        
+       .resume .content a .btn-resume :hover {
+         .resume .content a .btn-resume span{
+            opacity: 0;
+            -webkit-transition: opacity .4s;
+            -moz-transition: opacity .4s;
+            transition: opacity .4s;
+          }
+          i {
+            top:0;
+          }
+        }
+.text{
+    height: 40px;
+    margin-left: 25%;
+    padding-top: 30px;
+    style:bold;
+}
+
+.socialMediaConnect{
+    height: 80px;
+}
+
+.socialMediaConnect ul{
+    padding-top: 10px;
+    display: flex;
+    flex-direction:horizontal;
+    list-style: none;
+    justify-content:center;
+}
+
+.socialMediaConnect ul li{
+    text-align: center;
+    height: 40px;
+    width: 55px;
+}
+
+.socialMediaConnect ul li img{
+    height: 40px;
+    width: 55px;
+    padding-right: 20px;
+}
+
 body{
 	margin:0;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -403,7 +490,7 @@ h2.resp-accordion {
 
 .grid img {
 	max-width: none;
-	width: 100%;
+	width: 200px;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -602,7 +689,7 @@ h2.resp-accordion {
 }
 /*--//contact--*/
 /*--footer--*/
-.footer {
+/*.footer {
     padding: 2em 0;
     text-align: center;
     background: #1F1F1F;
@@ -616,7 +703,7 @@ h2.resp-accordion {
 }
 .footer p a:hover{
     color: #fff;
-}
+}*/
 /*--//footer--*/
 /*--slider-up-arrow--*/
 #toTop {
