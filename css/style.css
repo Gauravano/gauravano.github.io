@@ -4,6 +4,10 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+#darker {
+    color:black;
+}
 .resume{
   margin-top: 70px;
   background: url('https://source.unsplash.com/L8126OwlroY/');
@@ -251,7 +255,7 @@ p {
 }
 .about-right ul li {
     display: block;
-    color: #999;
+    color: black;
     margin: 1em 0;
 	font-size:1em;
 }
@@ -487,6 +491,17 @@ h2.resp-accordion {
 }
 
 /* Anchor will cover the whole item by default */
+#android img{
+    height: 400px;
+}
+
+#twitter img{
+    height: 200px;
+}
+
+#techora img{
+    height: 300px;
+}
 
 .grid img {
 	max-width: none;
