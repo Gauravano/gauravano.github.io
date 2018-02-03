@@ -597,71 +597,71 @@
 					<ul class="top-links">
 						<li><a target="_blank" href="https://www.facebook.com/gaurav27051997"><img src="images/facebook.png"></a></li>
 						<li><a target="_blank" href="https://twitter.com/sachdevarockz"><img src="images/twitter-icon.png"></a></li>
-						<li><a target="_blank" href="https://github.com/Gauravano"><img src="images/github-icon.png"></a></li>
-						<li><a target="_blank" href="https://www.instagram.com/sachdeva.gaurav1997/"><img src="images/instagram-icon.jpg"></a></li>
-						<li><a target="_blank" href="https://plus.google.com/u/0/108024787688432707943"><img src="images/gmail-icon.jpg"></a></li>
+						<li><a target="_blank" href="https://github.com/Gauravano"><img src="images/git_2.png"></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/sachdeva.gaurav1997/"><img src="images/insta_new.png"></a></li>
+						<li><a target="_blank" href="https://plus.google.com/u/0/108024787688432707943"><img src="images/gmail_new.png"></a></li>
 						<li><a target="_blank" href="https://www.linkedin.com/in/gaurav-sachdeva-279249122"><img src="images/linkedin-icon.png"></a></li>
 					</ul>
 				</div>
 	<!--//footer-->
 	<!--smooth-scrolling-of-move-up-->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
-		});
-	</script>
-	<script src="js/bootstrap.js"></script>
-	<script type="text/javascript">
-	var moveToTopLibrary = function(idOfButton, time, frequency){
-	var moveToTopButton = document.getElementById(idOfButton);
-
-	var intervalId;
-
-	window.addEventListener('wheel', function(event){
-	if(intervalId!=null && event.deltaY > 0){
-	clearInterval(intervalId);
-	}
-	});
-
-	var moveToTop = function(event){
-	console.log(this);
-	console.log("moveToTop was called");
-
-
-	var currentY = window.scrollY;
-
-
-	var delta = currentY / (time/frequency);
-	if(intervalId != null){
-	clearInterval(intervalId);
-	}
-	intervalId = setInterval(function(){
-
-	window.scrollTo(window.scrollX, window.scrollY - delta);
-
-	if(window.scrollY == 0){
-	clearInterval(intervalId);
-	}
-
-	},frequency);
-
-	};
-	moveToTopButton.addEventListener('click', moveToTop);
-	};
-
-	moveToTopLibrary('moveTop', 2000, 10);
-</script>
 </body>
 </html>
 
+<!--<script type="text/javascript">-->
+<!--$(document).ready(function() {-->
+<!---->
+<!--var defaults = {-->
+<!--containerID: 'toTop', // fading element id-->
+<!--containerHoverID: 'toTopHover', // fading element hover id-->
+<!--scrollSpeed: 1200,-->
+<!--easingType: 'linear' -->
+<!--};-->
+<!---->
+<!--$().UItoTop({ easingType: 'easeOutQuart' });-->
+<!---->
+<!--});-->
+<!--</script>-->
+<!--<script src="js/bootstrap.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--var moveToTopLibrary = function(idOfButton, time, frequency){-->
+<!--var moveToTopButton = document.getElementById(idOfButton);-->
+
+<!--var intervalId;-->
+
+<!--window.addEventListener('wheel', function(event){-->
+<!--if(intervalId!=null && event.deltaY > 0){-->
+<!--clearInterval(intervalId);-->
+<!--}-->
+<!--});-->
+
+<!--var moveToTop = function(event){-->
+<!--console.log(this);-->
+<!--console.log("moveToTop was called");-->
+
+
+<!--var currentY = window.scrollY;-->
+
+
+<!--var delta = currentY / (time/frequency);-->
+<!--if(intervalId != null){-->
+<!--clearInterval(intervalId);-->
+<!--}-->
+<!--intervalId = setInterval(function(){-->
+
+<!--window.scrollTo(window.scrollX, window.scrollY - delta);-->
+
+<!--if(window.scrollY == 0){-->
+<!--clearInterval(intervalId);-->
+<!--}-->
+
+<!--},frequency);-->
+
+<!--};-->
+<!--moveToTopButton.addEventListener('click', moveToTop);-->
+<!--};-->
+
+<!--moveToTopLibrary('moveTop', 2000, 10);-->
+<!--</script>
 
 
