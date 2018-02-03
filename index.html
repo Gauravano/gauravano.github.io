@@ -575,12 +575,12 @@
 					<div class="clearfix"></div>
 					<br><br>
 					<div class="contact-form">
-					<form action="http://formspree.io/sachdeva.gaurav1997@gmail.com" method="post">
+					<form name="myForm" action="http://formspree.io/sachdeva.gaurav1997@gmail.com" target="_blank" method="post" onsubmit="return validateForm()">
 							<input type="text" name="Name" placeholder="Name" required="">
-							<input style="margin-left: 6px;" name="Email" type="text" placeholder="Email"><br><br>
+							<input style="margin-left: 6px;" name="Email" type="text" required="" placeholder="Email"><br><br>
 							<input class="phone" name="phone" type="text" placeholder="Phone">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="submit" value="SUBMIT" >
+							<input onclick="window.location.href = 'gauravsachdeva.me';" type="submit" value="SUBMIT" >
 						</form>
 					</div>
 				</div>
@@ -589,7 +589,22 @@
 		</div>
 	</div>
 	<!--//contact -->
-
+	<script>
+        function validateForm() {
+            var x = document.forms["myForm"]["Name"].value;
+            var y = document.forms["myForm"]["Email"].value;
+            var z = document.forms["myForm"]["phone"].value;
+            if ( y.trim() == "sachdeva.gaurav1997@gmail.com" || z.trim() == "8447347865") {
+                alert("Please enter your correct details.");
+                return false;
+            }
+            if(z.trim().length!=10 && z.trim().length!=0){
+                alert("Please enter your correct contact number or you can skip it too.");
+                return false;
+			}
+			document.forms["myForm"].reset();
+        }
+	</script>
 
 	<!--footer-->
 
