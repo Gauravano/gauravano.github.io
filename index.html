@@ -1,59 +1,73 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115924252-1"></script>
 	<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-        gtag('config', 'UA-115924252-1');
+		gtag('config', 'UA-115924252-1');
+	</script>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker
+					.register('./sw_cached_site.js')
+					.then(reg => console.log('Service Worker: Registered (Pages)'))
+					.catch(err => console.log(`Service Worker: Error: ${err}`));
+			});
+		}
+
 	</script>
 
 	<title>Gaurav Sachdeva - Resume</title>
 
-<!--mobile apps-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	<!--mobile apps-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--mobile apps-->
-<!--Custom Theme files-->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/swipebox.css">
-<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-<!--//Custom Theme files-->
-<!--js-->
-<script src="js/jquery-1.11.1.min.js"></script> 
-<!-- //js -->
-<!--web-fonts-->
-<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!--//web-fonts-->
-<!--start-smooth-scrolling-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
-<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--mobile apps-->
+	<!--Custom Theme files-->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/swipebox.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+	<!--//Custom Theme files-->
+	<!--js-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!--web-fonts-->
+	<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet'
+	 type='text/css'>
+	<!--//web-fonts-->
+	<!--start-smooth-scrolling-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
 				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
 			});
 		});
-</script>
-<!--//end-smooth-scrolling-->
+	</script>
+	<!--//end-smooth-scrolling-->
 </head>
+
 <body>
 	<!--banner-->
 	<div id="home" class="banner">
 		<div class="banner-info">
 			<div class="container">
 				<div class="col-md-4 header-left">
-					<img src="images/profile2.jpg" alt=""/>
+					<img src="images/profile2.jpg" alt="" />
 				</div>
 				<div class="col-md-8 header-right">
 					<h2>Hello</h2>
@@ -62,30 +76,43 @@
 					<ul class="address">
 						<li>
 							<ul class="address-text">
-								<li><b>D.O.B</b></li>
-								&emsp;&emsp;&emsp;&emsp;<li>27-05-1997</li>
+								<li>
+									<b>D.O.B</b>
+								</li>
+								&emsp;&emsp;&emsp;&emsp;
+								<li>27-05-1997</li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>MOBILE NO. </b></li>&emsp;&emsp;&emsp;&emsp;
+								<li>
+									<b>MOBILE NO. </b>
+								</li>&emsp;&emsp;&emsp;&emsp;
 								<li>8447347865</li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>Current Location </b></li>
-								&emsp;&emsp;&emsp;&emsp;<li> Majlis Park, near Adarsh Nagar, Delhi - 110033 </li>
+								<li>
+									<b>Current Location </b>
+								</li>
+								&emsp;&emsp;&emsp;&emsp;
+								<li> Majlis Park, near Adarsh Nagar, Delhi - 110033 </li>
 							</ul>
 						</li>
 						<li>
 							<ul class="address-text">
-								<li><b>E-MAIL </b></li>
-								&emsp;&emsp;&emsp;&emsp;<li><a href="mailto:Gaurav Sachdeva<sachdeva.gaurav1997@gmail.com>"> sachdeva.gaurav1997@gmail.com</a></li>
+								<li>
+									<b>E-MAIL </b>
+								</li>
+								&emsp;&emsp;&emsp;&emsp;
+								<li>
+									<a href="mailto:Gaurav Sachdeva<sachdeva.gaurav1997@gmail.com>"> sachdeva.gaurav1997@gmail.com</a>
+								</li>
 							</ul>
 						</li>
 						<li>
-						<!-- 	<ul class="address-text">
+							<!-- 	<ul class="address-text">
 								<li><b>WEBSITE </b></li>
 								<li><a href="http://w3layouts.com">www.myresume.com</a></li>
 							</ul> -->
@@ -109,32 +136,51 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<div class="menu">
 					<ul class="nav navbar">
-						<li><a href="#about" class="scroll">About</a></li>
-						<li><a href="#work" class="scroll">Experience</a></li>
-						<li><a href="#education" class="scroll">Education</a></li>
-						<li><a href="#skills" class="scroll">Skills</a></li>
-						<li><a href="#projects" class="scroll">My Projects</a></li>
-						<li><a href="#contact" class="scroll">Contact</a></li>
+						<li>
+							<a href="#about" class="scroll">About</a>
+						</li>
+						<li>
+							<a href="#work" class="scroll">Experience</a>
+						</li>
+						<li>
+							<a href="#education" class="scroll">Education</a>
+						</li>
+						<li>
+							<a href="#skills" class="scroll">Skills</a>
+						</li>
+						<li>
+							<a href="#projects" class="scroll">My Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="scroll">Contact</a>
+						</li>
 					</ul>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 	<!--//top-nav-->
 	<!--about-->
 	<div id="about" class="about">
 		<div class="container">
 			<h3 class="title"> About Me</h3>
 			<div class="col-md-8 about-left">
-				<p style="font-size: 20px;" id="darker">To work on a challenging job profile which provides an opportunity to enhance my technical skills and become a successful software engineer. I am also passionate about Web Development and right now seeking opportunities to work with a startup or company to sharpen my development skills.I am a big fan of Open source and a regular contributor. I am a member of PublicLabs community and most of my contributions are in their repositories.  </p>
+				<p style="font-size: 20px;" id="darker">To work on a challenging job profile which provides an opportunity to enhance my technical skills and become a successful
+					software engineer. I am also passionate about Web Development and right now seeking opportunities to work with a startup
+					or company to sharpen my development skills.I am a big fan of Open source and a regular contributor. I am a member of
+					PublicLabs community and most of my contributions are in their repositories. </p>
 			</div>
-			<div class="col-md-4 about-right" >
+			<div class="col-md-4 about-right">
 				<ul>
 					<h5>Awards</h5>
-					<li><span class="glyphicon glyphicon-menu-right"></span> Appreciated in Google codelab hackathon (part of Android with Applied CS course) for most creative app organized at Google, Gurgaon</li>
-					<li><span class="glyphicon glyphicon-menu-right"></span> Secured 4th position in coding competition organised by BVP ISTE</li>
-					<li><span class="glyphicon glyphicon-menu-right"></span> In top 10 university ranker in 1st and 2nd semester and 2nd position in college in both 1st and 2nd semesters</li>
+					<li>
+						<span class="glyphicon glyphicon-menu-right"></span> Appreciated in Google codelab hackathon (part of Android with Applied CS course) for most creative app organized
+						at Google, Gurgaon</li>
+					<li>
+						<span class="glyphicon glyphicon-menu-right"></span> Secured 4th position in coding competition organised by BVP ISTE</li>
+					<li>
+						<span class="glyphicon glyphicon-menu-right"></span> In top 10 university ranker in 1st and 2nd semester and 2nd position in college in both 1st and 2nd semesters</li>
 					<!--<li><span class="glyphicon glyphicon-menu-right"></span> Secured 3​rd​ position in slogan writing competition at zonal level and 1​st​ position at District level</li>-->
 				</ul>
 				<div class="clearfix"> </div>
@@ -154,21 +200,31 @@
 					<h4>September 2018 - Present</h4>
 				</div>
 				<div class="col-md-6 work-left work-left2">
-					<h5><a style="color: #f7e612;" href="https://codein.withgoogle.com/organizations/public-lab/" target="_blank">Google Code-In Mentor</a><span class="glyphicon glyphicon-briefcase"> </span></h5>
-					
-					<p>I am participating in Google Code-In as a mentor with Public Lab organization. My role as a mentor is to guide and help students to contribute to various projects of Public Lab.</p>
+					<h5>
+						<a style="color: #f7e612;" href="https://codein.withgoogle.com/organizations/public-lab/" target="_blank">Google Code-In Mentor</a>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+					</h5>
+
+					<p>I am participating in Google Code-In as a mentor with Public Lab organization. My role as a mentor is to guide and help
+						students to contribute to various projects of Public Lab.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
 
- 		<div class="work-info">
-				<div class="col-md-6 work-left"> 
+			<div class="work-info">
+				<div class="col-md-6 work-left">
 					<h4>April 2018 - August 2018</h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-briefcase"> </span><a style="color: #f7e612;" href="https://publiclab.org/" target="_blank"> Google Summer of Code Intern at Public Lab </a></h5>
-					<p>Implementing Draft Feature and Email Integration project to the Public Lab's website. Details about my project can be checked at <a href="https://summerofcode.withgoogle.com/projects/#5536963831005184" target="_blank">https://summerofcode.withgoogle.com/projects/#5536963831005184</a></p>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+						<a style="color: #f7e612;" href="https://publiclab.org/" target="_blank"> Google Summer of Code Intern at Public Lab </a>
+					</h5>
+					<p>Implementing Draft Feature and Email Integration project to the Public Lab's website. Details about my project can be
+						checked at
+						<a href="https://summerofcode.withgoogle.com/projects/#5536963831005184" target="_blank">https://summerofcode.withgoogle.com/projects/#5536963831005184</a>
+					</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -179,19 +235,33 @@
 					<h4>October 2017 - Present</h4>
 				</div>
 				<div class="col-md-6 work-left work-left2">
-					<h5><a style="color: #f7e612;" href="https:publiclab.org/" target="_blank">Core Team member and Reviewer of Open Source organization Public Lab</a><span class="glyphicon glyphicon-briefcase"> </span></h5>
-					<p>I &#x2764; Open Source, and Web developemnt and that's why I spent most of my time contributing to Public Lab's repositories (mostly plots2). I like welcoming and helping new contributors to Open Source and PL proudly serves as one of the best organization for welcoming new contributors due to its well-written projects, contributors, various projects in different tech-stacks, etc.</p>
+					<h5>
+						<a style="color: #f7e612;" href="https:publiclab.org/" target="_blank">Core Team member and Reviewer of Open Source organization Public Lab</a>
+						<span class="glyphicon glyphicon-briefcase">
+						</span>
+					</h5>
+					<p>I &#x2764; Open Source, and Web developemnt and that's why I spent most of my time contributing to Public Lab's repositories
+						(mostly plots2). I like welcoming and helping new contributors to Open Source and PL proudly serves as one of the best
+						organization for welcoming new contributors due to its well-written projects, contributors, various projects in different
+						tech-stacks, etc.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
 			<div class="work-info">
-				<div class="col-md-6 work-left"> 
+				<div class="col-md-6 work-left">
 					<h4>June 2018 - July 2018</h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-briefcase"> </span><a style="color: #f7e612;" href="https://www.nagarro.com/en" target="_blank">Trainee at Nagarro</a></h5>
-					<p>At Nagarro, I learn development using MEAN stack. Specifically, I learn Node.js and Angular6, practiced JavaScript concepts and more. I also built a E-commerce website using Node.js and Angular - Bookish which is deployed at <a href="http://bookish-v1.herokuapp.com/" target="_blank">http://bookish-v1.herokuapp.com/</a></p>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+						<a style="color: #f7e612;" href="https://www.nagarro.com/en" target="_blank">Trainee at Nagarro</a>
+					</h5>
+					<p>At Nagarro, I learn development using MEAN stack. Specifically, I learn Node.js and Angular6, practiced JavaScript concepts
+						and more. I also built a E-commerce website using Node.js and Angular - Bookish which is deployed at
+						<a href="http://bookish-v1.herokuapp.com/"
+						 target="_blank">http://bookish-v1.herokuapp.com/</a>
+					</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -201,46 +271,61 @@
 					<h4>January 2018 - June 2018 </h4>
 				</div>
 				<div class="col-md-6 work-left work-left2">
-					<h5><a style="color: #f7e612;" href="https://puresoluble.com/" target="_blank">Web Development Intern at PurSolutions LLC </a><span class="glyphicon glyphicon-briefcase"> </span></h5>
-					<p>I worked as a Web development intern at Coding Ninjas where my role was to make new pages for the website, contributing ideas to design and UI, regularly updating the websites, and to add new features.</p>
+					<h5>
+						<a style="color: #f7e612;" href="https://puresoluble.com/" target="_blank">Web Development Intern at PurSolutions LLC </a>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+					</h5>
+					<p>I worked as a Web development intern at Coding Ninjas where my role was to make new pages for the website, contributing
+						ideas to design and UI, regularly updating the websites, and to add new features.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
 			<div class="work-info">
-				<div class="col-md-6 work-left"> 
+				<div class="col-md-6 work-left">
 					<h4>June 2017 - August 2017 </h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-briefcase"> </span><a style="color: #f7e612;" href="https://codingninjas.in/app/home" target="_blank">Teaching Assistant at Coding Ninjas</a></h5>
-					<p>Worked as a Teaching Assistant at Coding Ninjas for their online Data Structure course. Here, my role was to help students during their course, by clarifying their doubts, helping them with assignments, etc.</p>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+						<a style="color: #f7e612;" href="https://codingninjas.in/app/home" target="_blank">Teaching Assistant at Coding Ninjas</a>
+					</h5>
+					<p>Worked as a Teaching Assistant at Coding Ninjas for their online Data Structure course. Here, my role was to help students
+						during their course, by clarifying their doubts, helping them with assignments, etc.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="work-info"> 
+			<div class="work-info">
 				<div class="col-md-6 work-right work-right2">
 					<h4>June 2017 - Present </h4>
 				</div>
 				<div class="col-md-6 work-left work-left2">
-					<h5><a style="color: #f7e612;" href="https://www.facebook.com/bvcoecsi/" target="_blank"> Technical Head at BVP CSI </a><span class="glyphicon glyphicon-briefcase"> </span></h5>
-					<p>Designated as Technical Head of BVPCSI, my role was to conduct various workshops for students associated to our college society in Java, Data Structures, Git Workshop and organise Hackathon in Tech fests.</p>
+					<h5>
+						<a style="color: #f7e612;" href="https://www.facebook.com/bvcoecsi/" target="_blank"> Technical Head at BVP CSI </a>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+					</h5>
+					<p>Designated as Technical Head of BVPCSI, my role was to conduct various workshops for students associated to our college
+						society in Java, Data Structures, Git Workshop and organise Hackathon in Tech fests.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6 work-left"> 
+			<div class="work-info">
+				<div class="col-md-6 work-left">
 					<h4>June 2016 - May 2017 </h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-briefcase"> </span><a style="color: #f7e612;" href="https://www.facebook.com/bvcoecsi/" target="_blank"> Event Manager at BVPCSI </a></h5>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-briefcase"> </span>
+						<a style="color: #f7e612;" href="https://www.facebook.com/bvcoecsi/" target="_blank"> Event Manager at BVPCSI </a>
+					</h5>
 					<p>As a part of event organising team, I helped in organising many events with seniors.</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 
-				<div class="clearfix"> </div>
-			</div>
+			<div class="clearfix"> </div>
 		</div>
+	</div>
 	</div>
 	<!--//work-experience-->
 
@@ -248,33 +333,37 @@
 	<div id="education" class="education">
 		<div class="container">
 			<h3 class="title">Education</h3>
-			<div class="work-info"> 
-				<div class="col-md-6 work-left"> 
+			<div class="work-info">
+				<div class="col-md-6 work-left">
 					<h4>BTECH, 2015 - Present</h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-education"> </span> Bharati Vidyapeeth College of Engineering (BVCOE),New Delhi</h5>
-					<p>Currently, I am pursuing BTECH in Information Technology from BVP Delhi(affiliated to GGSIPU)  </p>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-education"> </span> Bharati Vidyapeeth College of Engineering (BVCOE),New Delhi</h5>
+					<p>Currently, I am pursuing BTECH in Information Technology from BVP Delhi(affiliated to GGSIPU) </p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6 work-right work-right2"> 
+			<div class="work-info">
+				<div class="col-md-6 work-right work-right2">
 					<h4>Schooling,2009 - 2015</h4>
 				</div>
-				<div class="col-md-6 work-left work-left2"> 
-					<h5> D.L DAV Model School <span class="glyphicon glyphicon-education"></span></h5>
+				<div class="col-md-6 work-left work-left2">
+					<h5> D.L DAV Model School
+						<span class="glyphicon glyphicon-education"></span>
+					</h5>
 					<p>I have attended class 8th to 12th from D.L DAV Model School,Shalimar Bagh</p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
-			<div class="work-info"> 
-				<div class="col-md-6 work-left"> 
+			<div class="work-info">
+				<div class="col-md-6 work-left">
 					<h4>Schooling,2000 - 2008</h4>
 				</div>
-				<div class="col-md-6 work-right"> 
-					<h5><span class="glyphicon glyphicon-education"> </span> Arya Model School</h5>
-					<p>Attended 1st class to 7th class from Arya Model School,Adarsh Nagar  </p>
+				<div class="col-md-6 work-right">
+					<h5>
+						<span class="glyphicon glyphicon-education"> </span> Arya Model School</h5>
+					<p>Attended 1st class to 7th class from Arya Model School,Adarsh Nagar </p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -287,17 +376,23 @@
 			<h3 class="title">Skills</h3>
 			<div class="skills-info">
 				<div class="col-md-6 bar-grids">
-					<h6>WEB DEVELOPMENT  <span> 80% </span></h6>
+					<h6>WEB DEVELOPMENT
+						<span> 80% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 80%">
 						</div>
 					</div>
-					<h6>JAVASCRIPT AND JQUERY <span> 70% </span></h6>
+					<h6>JAVASCRIPT AND JQUERY
+						<span> 70% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 70%">
 						</div>
 					</div>
-					<h6>HTML/CSS<span>90% </span></h6>
+					<h6>HTML/CSS
+						<span>90% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 90%">
 						</div>
@@ -305,22 +400,28 @@
 				</div>
 
 				<div class="col-md-6 bar-grids">
-					<h6>PROJECT MANAGEMENT <span> 80% </span></h6>
+					<h6>PROJECT MANAGEMENT
+						<span> 80% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 80%">
 						</div>
 					</div>
-					<h6>ANDROID DEVELOPMENT<span> 50% </span></h6>
+					<h6>ANDROID DEVELOPMENT
+						<span> 50% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 50%">
 						</div>
 					</div>
-					<h6>PROGRAMMING <span> 80% </span></h6>
+					<h6>PROGRAMMING
+						<span> 80% </span>
+					</h6>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" style="width: 80%">
 						</div>
 					</div>
-				
+
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -331,17 +432,29 @@
 	<div id="projects" class="portfolio">
 		<div class="container">
 			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">My Projects</h3>
-			<div class="sap_tabs">			
+			<div class="sap_tabs">
 				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
-						<li class="resp-tab-item"><span>All</span></li>
-						<li class="resp-tab-item"><span>Javascript</span></li>
-						<li class="resp-tab-item"><span>Android</span></li>
-						<li class="resp-tab-item"><span>RubyOnRails</span></li>
-						<li class="resp-tab-item"><span>React</span></li>
-						<li class="resp-tab-item"><span>NodeJS & Angular6</span></li>
-					</ul>	
-					<div class="clearfix"> </div>	
+						<li class="resp-tab-item">
+							<span>All</span>
+						</li>
+						<li class="resp-tab-item">
+							<span>Javascript</span>
+						</li>
+						<li class="resp-tab-item">
+							<span>Android</span>
+						</li>
+						<li class="resp-tab-item">
+							<span>RubyOnRails</span>
+						</li>
+						<li class="resp-tab-item">
+							<span>React</span>
+						</li>
+						<li class="resp-tab-item">
+							<span>NodeJS & Angular6</span>
+						</li>
+					</ul>
+					<div class="clearfix"> </div>
 					<div class="resp-tabs-container">
 						<div class="tab-1 resp-tab-content">
 							<div class="tab_img">
@@ -350,10 +463,12 @@
 										<a href="images/calendar.png" class="swipebox" title="A dynamic calendar app in which you can swipe through days,months,year at a time ">
 											<img src="images/calendar.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3>My<span> Calendar</span></h3>
+												<h3>My
+													<span> Calendar</span>
+												</h3>
 												<p>A dynamic calendar app in which you can swipe through days,months,year at a time .</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 
@@ -362,7 +477,9 @@
 										<a href="images/techora.png" class="swipebox" title="  Website to ask queries related to programming questions or development.">
 											<img src="images/techora.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Techora</span></h3>
+												<h3>
+													<span> Techora</span>
+												</h3>
 												<p>Website to ask queries related to programming questions or development.</p>
 											</div>
 										</a>
@@ -373,8 +490,11 @@
 										<a href="images/web_sih.png" class="swipebox" title="Centralized Attendance System">
 											<img src="images/web_sih.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Centralized Attendance System for PWD</span></h3>
-												<p>Website which can be used by PWD workers or any organization for maintaining their employee's attendance with Geotracking and Real-time database connectivity.</p>
+												<h3>
+													<span> Centralized Attendance System for PWD</span>
+												</h3>
+												<p>Website which can be used by PWD workers or any organization for maintaining their employee's attendance with
+													Geotracking and Real-time database connectivity.</p>
 											</div>
 										</a>
 									</div>
@@ -384,7 +504,9 @@
 										<a href="images/voting_app.png" class="swipebox" title="  Website to ask queries related to programming questions or development.">
 											<img src="images/voting_app.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Online Voting Portal</span></h3>
+												<h3>
+													<span>Online Voting Portal</span>
+												</h3>
 												<p>It is built as an attempt to replicate current voting system.</p>
 											</div>
 										</a>
@@ -396,10 +518,12 @@
 										<a href="images/twitter.png" class="swipebox" title="Trying to copy Twitter with its basic features">
 											<img src="images/twitter.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Twitter</span></h3>
+												<h3>
+													<span> Twitter</span>
+												</h3>
 												<p>Trying to copy Twitter with its basic features</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 
@@ -408,10 +532,13 @@
 										<a href="images/ball_in_a_box.png" class="swipebox" title=" A javascript game where player has to keep ball inside the given box using mouse click">
 											<img src="images/ball_in_a_box.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Ball in a Box </span></h3>
-												<p>A javascript game where player has to keep ball inside the given box using mouse click,ball moves in direction of click .Scoring system coming soon.</p>
+												<h3>
+													<span>Ball in a Box </span>
+												</h3>
+												<p>A javascript game where player has to keep ball inside the given box using mouse click,ball moves in direction
+													of click .Scoring system coming soon.</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -419,10 +546,13 @@
 										<a href="images/infiniteball.png" class="swipebox" title=" Infinite ball screensaver ">
 											<img src="images/infiniteball.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Infinite Ball Screensaver</span></h3>
-												<p>An Infinite ball screensaver made using javascript , in this ball moves at different speeds at each time it runs , additional effects can be added for clicks,time,etc. </p>
+												<h3>
+													<span> Infinite Ball Screensaver</span>
+												</h3>
+												<p>An Infinite ball screensaver made using javascript , in this ball moves at different speeds at each time it runs
+													, additional effects can be added for clicks,time,etc. </p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -430,7 +560,9 @@
 										<a href="images/musicMaster.png" class="swipebox" title="App using which you can listen to your favourite singer's music ,just with Spotify login ">
 											<img src="images/musicMaster.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Music Master</span></h3>
+												<h3>
+													<span> Music Master</span>
+												</h3>
 												<p>App using which you can listen to your favourite singer's music ,just with Spotify login </p>
 											</div>
 										</a>
@@ -441,7 +573,9 @@
 										<a href="images/reminderPro.png" class="swipebox" title="A React application to remind you about your important tasks with user-friendly UI">
 											<img src="images/reminderPro.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Reminder Pro </span></h3>
+												<h3>
+													<span>Reminder Pro </span>
+												</h3>
 												<p>A React application to remind you about your important tasks with user-friendly UI</p>
 											</div>
 										</a>
@@ -452,19 +586,27 @@
 										<a href="images/goalCoach.png" class="swipebox" title="Add,edit,manage your goals in secure way as application require one to create account ">
 											<img src="images/goalCoach.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3>Goal<span> Coach</span></h3>
+												<h3>Goal
+													<span> Coach</span>
+												</h3>
 												<p>Add,edit,manage your goals in secure way as application require one to create account.</p>
 											</div>
 										</a>
 									</div>
 								</div>
-								<div class="col-md-4 portfolio-grids" >
+								<div class="col-md-4 portfolio-grids">
 									<div class="grid" id="android">
 										<a href="images/puzzledirection.png" class="swipebox" title="Android game for fun learning developed at Google Codesprint 2016 under Applied CS with Android course organised at Google , Gurgaon( Gurugram )">
 											<img src="images/puzzledirection.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Puzzle Direction</span></h3>
-												<p>PuzzleDirection is an android based game/application in which player has to reach from Start Point to End point by solving Questions . Player can choose to solve which path he/she want to follow for winning the game .Each path differes from other by the question the player want to confront to move towards to the next level .The fun part is you can choose which type of question you want to answer from the following categories: 1.Mathematics 2.Programming 3.General Knowledge 4.Geography 5.Political Science 6.Biology 7.Physics 8.Chemistry</p>
+												<h3>
+													<span> Puzzle Direction</span>
+												</h3>
+												<p>PuzzleDirection is an android based game/application in which player has to reach from Start Point to End point
+													by solving Questions . Player can choose to solve which path he/she want to follow for winning the game .Each
+													path differes from other by the question the player want to confront to move towards to the next level .The
+													fun part is you can choose which type of question you want to answer from the following categories: 1.Mathematics
+													2.Programming 3.General Knowledge 4.Geography 5.Political Science 6.Biology 7.Physics 8.Chemistry</p>
 											</div>
 										</a>
 									</div>
@@ -475,7 +617,9 @@
 										<a href="images/bookish.png" class="swipebox" title="  E-commerce website to buy old and new books. Helpful to school and college students.">
 											<img src="images/bookish.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Bookish</span></h3>
+												<h3>
+													<span> Bookish</span>
+												</h3>
 												<p>E-commerce website to buy old and new books. Helpful to school and college students.</p>
 											</div>
 										</a>
@@ -484,7 +628,7 @@
 
 							</div>
 						</div>
-								
+
 						<div class="tab-1 resp-tab-content">
 							<div class="tab_img">
 								<div class="col-md-4 portfolio-grids">
@@ -492,10 +636,12 @@
 										<a href="images/calendar.png" class="swipebox" title="A dynamic calendar app in which you can swipe through days,months,year at a time ">
 											<img src="images/calendar.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3>My<span> Calendar</span></h3>
+												<h3>My
+													<span> Calendar</span>
+												</h3>
 												<p>A dynamic calendar app in which you can swipe through days,months,year at a time .</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -503,10 +649,13 @@
 										<a href="images/ball_in_a_box.png" class="swipebox" title=" A javascript game where player has to keep ball inside the given box using mouse click">
 											<img src="images/ball_in_a_box.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Ball in a Box </span></h3>
-												<p>A javascript game where player has to keep ball inside the given box using mouse click,ball moves in direction of click .Scoring system coming soon.</p>
+												<h3>
+													<span>Ball in a Box </span>
+												</h3>
+												<p>A javascript game where player has to keep ball inside the given box using mouse click,ball moves in direction
+													of click .Scoring system coming soon.</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -514,10 +663,13 @@
 										<a href="images/infiniteball.png" class="swipebox" title=" Infinite ball screensaver ">
 											<img src="images/infiniteball.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Infinite Ball Screensaver</span></h3>
-												<p>An Infinite ball screensaver made using javascript , in this ball moves at different speeds at each time it runs , additional effects can be added for clicks,time,etc. </p>
+												<h3>
+													<span> Infinite Ball Screensaver</span>
+												</h3>
+												<p>An Infinite ball screensaver made using javascript , in this ball moves at different speeds at each time it runs
+													, additional effects can be added for clicks,time,etc. </p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="clearfix"> </div>
@@ -525,19 +677,25 @@
 						</div>
 						<div class="tab-1 resp-tab-content">
 							<div class="tab_img">
-								
+
 								<div class="col-md-4 portfolio-grids">
 									<div class="grid">
 										<a href="images/puzzledirection.png" class="swipebox" title="Android game for fun learning developed at Google Codesprint 2016 under Applied CS with Android course organised at Google , Gurgaon( Gurugram )">
 											<img src="images/puzzledirection.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Puzzle Direction</span></h3>
-												<p>PuzzleDirection is an android based game/application in which player has to reach from Start Point to End point by solving Questions . Player can choose to solve which path he/she want to follow for winning the game .Each path differes from other by the question the player want to confront to move towards to the next level .The fun part is you can choose which type of question you want to answer from the following categories: 1.Mathematics 2.Programming 3.General Knowledge 4.Geography 5.Political Science 6.Biology 7.Physics 8.Chemistry</p>
+												<h3>
+													<span> Puzzle Direction</span>
+												</h3>
+												<p>PuzzleDirection is an android based game/application in which player has to reach from Start Point to End point
+													by solving Questions . Player can choose to solve which path he/she want to follow for winning the game .Each
+													path differes from other by the question the player want to confront to move towards to the next level .The
+													fun part is you can choose which type of question you want to answer from the following categories: 1.Mathematics
+													2.Programming 3.General Knowledge 4.Geography 5.Political Science 6.Biology 7.Physics 8.Chemistry</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
-								
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -548,10 +706,12 @@
 										<a href="images/techora.png" class="swipebox" title="  Website to ask queries related to programming questions or development.">
 											<img src="images/techora.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Techora</span></h3>
+												<h3>
+													<span> Techora</span>
+												</h3>
 												<p>Website to ask queries related to programming questions or development.</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -559,10 +719,12 @@
 										<a href="images/twitter.png" class="swipebox" title="Trying to copy Twitter with its basic features">
 											<img src="images/twitter.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Twitter</span></h3>
+												<h3>
+													<span> Twitter</span>
+												</h3>
 												<p>Trying to copy Twitter with its basic features</p>
 											</div>
-										</a>	
+										</a>
 									</div>
 								</div>
 								<div class="col-md-4 portfolio-grids">
@@ -570,8 +732,11 @@
 										<a href="images/web_sih.png" class="swipebox" title="Centralized Attendance System">
 											<img src="images/web_sih.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Centralized Attendance System for PWD</span></h3>
-												<p>Website which can be used by PWD workers or any organization for maintaining their employee's attendance with Geotracking and Real-time database connectivity.</p>
+												<h3>
+													<span> Centralized Attendance System for PWD</span>
+												</h3>
+												<p>Website which can be used by PWD workers or any organization for maintaining their employee's attendance with
+													Geotracking and Real-time database connectivity.</p>
 											</div>
 										</a>
 									</div>
@@ -581,13 +746,15 @@
 										<a href="images/voting_app.png" class="swipebox" title="  Website to ask queries related to programming questions or development.">
 											<img src="images/voting_app.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Online Voting Portal</span></h3>
+												<h3>
+													<span>Online Voting Portal</span>
+												</h3>
 												<p>It is built as an attempt to replicate current voting system.</p>
 											</div>
 										</a>
 									</div>
 								</div>
-								
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -599,7 +766,9 @@
 										<a href="images/musicMaster.png" class="swipebox" title="App using which you can listen to your favourite singer's music ,just with Spotify login ">
 											<img src="images/musicMaster.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Music Master</span></h3>
+												<h3>
+													<span> Music Master</span>
+												</h3>
 												<p>App using which you can listen to your favourite singer's music ,just with Spotify login </p>
 											</div>
 										</a>
@@ -610,7 +779,9 @@
 										<a href="images/reminderPro.png" class="swipebox" title="A React application to remind you about your important tasks with user-friendly UI">
 											<img src="images/reminderPro.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span>Reminder Pro </span></h3>
+												<h3>
+													<span>Reminder Pro </span>
+												</h3>
 												<p>A React application to remind you about your important tasks with user-friendly UI</p>
 											</div>
 										</a>
@@ -621,7 +792,9 @@
 										<a href="images/goalCoach.png" class="swipebox" title="Add,edit,manage your goals in secure way as application require one to create account ">
 											<img src="images/goalCoach.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3>Goal<span> Coach</span></h3>
+												<h3>Goal
+													<span> Coach</span>
+												</h3>
 												<p>Add,edit,manage your goals in secure way as application require one to create account.</p>
 											</div>
 										</a>
@@ -634,20 +807,22 @@
 
 						<div class="tab-1 resp-tab-content">
 							<div class="tab_img">
-								
+
 								<div class="col-md-4 portfolio-grids">
 									<div class="grid effect-sarah" id="techora">
 										<a href="images/bookish.png" class="swipebox" title="  E-commerce website to buy old and new books. Helpful to school and college students.">
 											<img src="images/bookish.png" alt="" class="img-responsive" />
 											<div class="figcaption">
-												<h3><span> Bookish</span></h3>
+												<h3>
+													<span> Bookish</span>
+												</h3>
 												<p>E-commerce website to buy old and new books. Helpful to school and college students.</p>
 											</div>
 										</a>
 									</div>
 								</div>
-		
-								
+
+
 								<div class="clearfix"> </div>
 							</div>
 						</div>
@@ -667,11 +842,11 @@
 			</script>
 			<!--//ResponsiveTabs-->
 			<!-- swipe box js -->
-			<script src="js/jquery.swipebox.min.js"></script> 
-				<script type="text/javascript">
-					jQuery(function($) {
-						$(".swipebox").swipebox();
-					});
+			<script src="js/jquery.swipebox.min.js"></script>
+			<script type="text/javascript">
+				jQuery(function ($) {
+					$(".swipebox").swipebox();
+				});
 			</script>
 			<!-- //swipe box js -->
 		</div>
@@ -679,46 +854,49 @@
 	<!--//portfolio-->
 
 	<section class="resume">
-  <div class="content">
-    <a href="https://drive.google.com/file/d/1Tw-Sv7c-1h8EoKf8OnsMjo6fc9T0cKWT/view?usp=sharing" target="_blank">
-      <div class="btn-resume">
-        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-        <span>Download my resume</span>
-      </div>
-    </a>
-  </div>
-</section>
+		<div class="content">
+			<a href="https://drive.google.com/file/d/1Tw-Sv7c-1h8EoKf8OnsMjo6fc9T0cKWT/view?usp=sharing" target="_blank">
+				<div class="btn-resume">
+					<i class="fa fa-download fa-2x" aria-hidden="true"></i>
+					<span>Download my resume</span>
+				</div>
+			</a>
+		</div>
+	</section>
 	<!--contact -->
 	<div class="welcome contact" id="contact">
 		<div class="container">
 			<h3 class="title">Contact Me</h3>
 			<div class="contact-row">
 				<div class="col-md-6 contact-left">
-					<iframe
-  width="450"
-  height="250"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCncaxbuuzKglyTekNJF9D1IAxE3GBoRiI&q=Block+B,+Majlis+Park,+Azadpur,+Delhi,+110033" allowfullscreen>
-</iframe>
+					<iframe width="450" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCncaxbuuzKglyTekNJF9D1IAxE3GBoRiI&q=Block+B,+Majlis+Park,+Azadpur,+Delhi,+110033"
+					 allowfullscreen>
+					</iframe>
 				</div>
 				<div class="col-md-6 contact-right">
 					<div class="address-left">
-						<p>Street No.- 4, Majlis Park,<br> Delhi-110033, India </p>
+						<p>Street No.- 4, Majlis Park,
+							<br> Delhi-110033, India </p>
 					</div>
 					<div class="address-right">
 						<p> 8447347865 </p>
-						<p><a href="mailto:sachdeva.gaurav1997@gmail.com">sachdeva.gaurav1997@gmail.com</a></p>
+						<p>
+							<a href="mailto:sachdeva.gaurav1997@gmail.com">sachdeva.gaurav1997@gmail.com</a>
+						</p>
 					</div>
 
 					<div class="clearfix"></div>
-					<br><br>
+					<br>
+					<br>
 					<div class="contact-form">
-					<form name="myForm" action="http://formspree.io/sachdeva.gaurav1997@gmail.com" target="_blank" method="post" onsubmit="return validateForm()">
+						<form name="myForm" action="http://formspree.io/sachdeva.gaurav1997@gmail.com" target="_blank" method="post" onsubmit="return validateForm()">
 							<input type="text" name="Name" placeholder="Name" required="">
-							<input style="margin-left: 6px;" name="Email" type="text" required="" placeholder="Email"><br><br>
+							<input style="margin-left: 6px;" name="Email" type="text" required="" placeholder="Email">
+							<br>
+							<br>
 							<input class="phone" name="phone" type="text" placeholder="Phone">
 							<textarea name="Message" placeholder="Message" required=""></textarea>
-							<input type="submit" value="SUBMIT" >
+							<input type="submit" value="SUBMIT">
 						</form>
 					</div>
 				</div>
@@ -728,37 +906,62 @@
 	</div>
 	<!--//contact -->
 	<script>
-        function validateForm() {
-            var x = document.forms["myForm"]["Name"].value;
-            var y = document.forms["myForm"]["Email"].value;
-            var z = document.forms["myForm"]["phone"].value;
-            if ( y.trim() == "sachdeva.gaurav1997@gmail.com" || z.trim() == "8447347865") {
-                alert("Please enter your correct details.");
-                return false;
-            }
-            if(z.trim().length!=10 && z.trim().length!=0){
-                alert("Please enter your correct contact number or you can skip it too.");
-                return false;
+		function validateForm() {
+			var x = document.forms["myForm"]["Name"].value;
+			var y = document.forms["myForm"]["Email"].value;
+			var z = document.forms["myForm"]["phone"].value;
+			if (y.trim() == "sachdeva.gaurav1997@gmail.com" || z.trim() == "8447347865") {
+				alert("Please enter your correct details.");
+				return false;
+			}
+			if (z.trim().length != 10 && z.trim().length != 0) {
+				alert("Please enter your correct contact number or you can skip it too.");
+				return false;
 			}
 
-        }
+		}
 	</script>
 
 	<!--footer-->
 
 	<div class="socialMediaConnect">
-					<ul class="top-links">
-						<li><a target="_blank" href="https://www.facebook.com/gaurav27051997"><img src="images/facebook.png"></a></li>
-						<li><a target="_blank" href="https://twitter.com/gauravano"><img src="images/twitter-icon.png"></a></li>
-						<li><a target="_blank" href="https://github.com/Gauravano"><img src="images/github_logo2.png"></a></li>
-						<li><a target="_blank" href="https://www.instagram.com/gauravano/"><img src="images/insta_new.png"></a></li>
-						<li><a target="_blank" href="mailto:Gaurav Sachdeva<sachdeva.gaurav1997@gmail.com>"><img src="images/gmail_new.png"></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/gauravano"><img src="images/linkedin-icon.png"></a></li>
-					</ul>
-				</div>
+		<ul class="top-links">
+			<li>
+				<a target="_blank" href="https://www.facebook.com/gaurav27051997">
+					<img src="images/facebook.png">
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://twitter.com/gauravano">
+					<img src="images/twitter-icon.png">
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://github.com/Gauravano">
+					<img src="images/github_logo2.png">
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.instagram.com/gauravano/">
+					<img src="images/insta_new.png">
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="mailto:Gaurav Sachdeva<sachdeva.gaurav1997@gmail.com>">
+					<img src="images/gmail_new.png">
+				</a>
+			</li>
+			<li>
+				<a target="_blank" href="https://www.linkedin.com/in/gauravano">
+					<img src="images/linkedin-icon.png">
+				</a>
+			</li>
+		</ul>
+	</div>
 	<!--//footer-->
 	<!--smooth-scrolling-of-move-up-->
 </body>
+
 </html>
 
 <!--<script type="text/javascript">-->
@@ -816,5 +1019,3 @@
 
 <!--moveToTopLibrary('moveTop', 2000, 10);-->
 <!--</script>
-
-
