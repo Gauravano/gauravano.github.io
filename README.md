@@ -1,1 +1,1 @@
-# Checkout live resume at: gauravsachdeva.me
+Checkout webpage at https://gauravano.github.io :smile:
